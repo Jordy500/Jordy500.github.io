@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jordan Ngueko — Data Analyst / Data Engineer</title>
+  <meta name="description" content="Portfolio de Jordan Ngueko : pipelines de données, dbt, BigQuery, RAG.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Jordan Ngueko</h1>
+    <p class="role">Data Analyst / Data Engineer junior</p>
+    <p class="pitch">Master 2 Big Data &amp; IA (HETIC). Je construis des pipelines de données testés, de la collecte à la restitution : Python, SQL, dbt, BigQuery, Docker.</p>
+    <nav class="liens">
+      <a href="https://github.com/Jordy500">GitHub</a>
+      <a href="https://www.linkedin.com/in/jordan-fasseu/">LinkedIn</a>
+      <a href="https://public.tableau.com/app/profile/jordan.ngueko">Tableau Public</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projets">
+      <h2>Projets</h2>
+
+      <article class="projet">
+        <h3>Crédit, taux et inflation en France</h3>
+        <p>Pipeline de bout en bout sur des données publiques BCE et INSEE : collecte par API, entrepôt BigQuery, transformations dbt (staging → marts) et tableau de bord Tableau Public.</p>
+        <p class="preuve">30 tests dbt lancés à chaque push par GitHub Actions.</p>
+        <p class="stack">Python · SQL · BigQuery · dbt · Docker · GitHub Actions · Tableau</p>
+        <p class="liens-projet">
+          <a href="https://github.com/Jordy500/data-finance-project">Code</a>
+          <a href="https://public.tableau.com/app/profile/jordan.ngueko/viz/Crditetinflation/Dashboard">Dashboard</a>
+        </p>
+      </article>
+
+      <article class="projet">
+        <h3>Assistant Code du travail (RAG)</h3>
+        <p>Chatbot qui répond aux questions sur les congés payés et la durée du travail en s'appuyant sur les articles du Code du travail récupérés via l'API Légifrance, avec citation des articles.</p>
+        <p class="preuve">RAG sans framework : base vectorielle ChromaDB, embeddings multilingues, agent modérateur contre l'injection de prompt (sortie JSON stricte).</p>
+        <p class="stack">Python · ChromaDB · sentence-transformers · Groq (Llama 3.3)</p>
+        <p class="liens-projet">
+          <a href="https://github.com/Jordy500/Labour-code-assistant">Code</a>
+        </p>
+      </article>
+
+      <article class="projet">
+        <h3>MLOps : qualité du vin</h3>
+        <p>Modèle de classification (Random Forest) servi par une API FastAPI, conteneurisé avec Docker, entraînement et livraison automatisés.</p>
+        <p class="preuve">Deux workflows GitHub Actions : entraînement à chaque push sur une branche feature, puis entraînement, build et publication de l'image Docker sur GitHub Container Registry à chaque push sur develop.</p>
+        <p class="stack">Python · scikit-learn · FastAPI · Docker · GitHub Actions</p>
+        <p class="liens-projet">
+          <a href="https://github.com/Jordy500/MLops">Code</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <ul class="competences">
+        <li><strong>Langages</strong> : Python (Pandas, PySpark), SQL</li>
+        <li><strong>Données</strong> : BigQuery, PostgreSQL, MySQL, dbt, API</li>
+        <li><strong>Analyse et visualisation</strong> : Excel, Power BI, Tableau, Streamlit</li>
+        <li><strong>Industrialisation</strong> : Git, GitHub Actions, Docker</li>
+        <li><strong>IA</strong> : RAG, ChromaDB, embeddings, LLM (Groq)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Je cherche un poste de Data Analyst ou Data Engineer junior. Écrivez-moi :</p>
+      <p class="liens">
+        <a href="mailto:jordanngueko@gmail.com">jordanngueko@gmail.com</a>
+        <a href="https://www.linkedin.com/in/jordan-fasseu/">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Jordan Ngueko</p>
+  </footer>
+</body>
+</html>
